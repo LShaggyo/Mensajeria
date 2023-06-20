@@ -106,12 +106,17 @@ main {
     align-items: center;
 }
 
+.new-chat a {
+    width: 60%;
+    height: 40%;
+}
+
 .new-chat button {
     cursor: pointer;
     border: none;
     background-color: var(--bgv) ;
-    width: 120px;
-    height: 30px;
+    width: 100%;
+    height: 100%;
     transition: 0.5s ease;
 }
 
@@ -133,10 +138,30 @@ main {
 .chat-msg {
     width: 100%;
     height: 100%;
-    background-color: black;
 }
 
 .chat-person {
     display: flex;
-    flex-direction: column;
+    width: calc(100% - 40px);
+    height: 10vh;
+    align-items: center;
+    justify-content: start;
+    border-bottom: solid var(--plt);
+    gap: 20px;
+    padding: 0px 20px;
 }
+
+.chat-person img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;    
+}
+
+.chat-person h3 {
+    margin: 0;
+}
+
+.chat-text p {
+    margin: 0;
+}
+
