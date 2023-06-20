@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+}
+
+main {
+    color: var(--txt);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+:root {
+    --bgv:  #A491d2;
+    --bgh:  #cdc3e6;
+    --txt:  #1b1f21;
+    --fcs:  #bec1bb;
+    --plt:  #e8ebe4;
+
+}
+
+.chat {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 100vh;
+}
+
+.msg {
+    width: 80vw;
+    height: 100vh;
+    background-color: beige;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+}
+
+.header-profile {
+    display: flex;
+    padding: 10px 40px 10px 40px;
+    height: 30%;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid var(--plt);
+}
+
+.profile {
+    display: flex;
+    width: auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile img {
+    width: 40px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.profile-text {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-text h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-text p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--fcs);
+}
+
+.header-profile .icon {
+    display: flex;
+    font-size: 1.5rem;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.header-profile .icon ion-icon {
+    color: var(--fcs);
+    transition: 0.5s ease;
+}
+
+.header-profile .icon ion-icon:hover {
+    color: rgb(0, 0, 0);
+}
+
+.new-chat {
+    border-bottom: solid var(--plt);
+    display: flex;
+    width:100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-chat button {
+    cursor: pointer;
+    border: none;
+    background-color: var(--bgv) ;
+    width: 120px;
+    height: 30px;
+    transition: 0.5s ease;
+}
+
+.new-chat button:hover {
+    background-color: var(--bgh);
+}
+
+.new-chat button:focus {
+    background-color: var(--fcs);
+}
+
+
+.new-chat button span {
+    padding: 10px;
+    color: white;
+
+}
+
+.chat-msg {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.chat-person {
+    display: flex;
+    flex-direction: column;
+}
